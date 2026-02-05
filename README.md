@@ -1,4 +1,5 @@
 # SillyTavern 状态栏编辑器 (Status Bar Editor)
+工具地址：http://h.hony-wen.com:3099/
 
 ## ⚠️注意：这是仅限给电脑端使用的工具，也不是给MVU用的状态栏⚠️
 
