@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div style="font-family: 'Segoe UI', Roboto, sans-serif; background: linear-gradient(145deg, #1b151e, #2b2026); color: #e0e0e0; padding: 20px; border-radius: 12px; border: 1px solid #333; width: 100%; max-width: 350px; box-shadow: 0 8px 32px rgba(0,0,0,0.8); position: relative; overflow: hidden;">
+                <!-- Left Color Bar -->
+        <div style="position: absolute; top: 0; left: 0; width: 4px; height: 100%; background: #e91e63;"></div>
+
+        <!-- Meta: Time & Location -->
+        <div style="display: flex; justify-content: space-between; font-size: 0.75em; color: #888; margin-bottom: 8px; padding-bottom: 8px; border-bottom: 1px dashed rgba(255,255,255,0.1);">
+            <div>🗓️ $<Time></div>
+            <div>🌏 $<Location></div>
+        </div>
+
+        <!-- Header: Name & Level -->
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 10px;">
+            <div style="font-size: 1.4em; font-weight: 900; color: #fff; letter-spacing: 1px;">$<Character></div>
+            <div style="background: #e91e63; color: #fff; padding: 2px 12px; border-radius: 4px; font-size: 0.8em; font-weight: bold;">LV. $<Level></div>
+        </div>
+
+        <!-- Info Grid -->
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; font-size: 0.85em; margin-bottom: 15px;">
+            <div style="grid-column: span 2; color: #aaa;">🌺 $<Age></div>
+            <div style="grid-column: span 2; color: #aaa;">💋 $<Gender></div>
+            <div style="grid-column: span 2; border-top: 1px solid #333; padding-top: 5px; margin-top: 5px; color: #64b5f6;">🧠 $<Personality></div>
+            <div style="grid-column: span 2; color: #81c784;">⚡ $<Ability></div>
+        </div>
+
+        <!-- Affection Bar -->
+        <div style="margin-bottom: 10px;">
+            <div style="display: flex; justify-content: space-between; font-size: 0.7em; margin-bottom: 4px; color: #f06292;">
+                <span>💞 好感值</span>
+                <span>$<Favorability>%</span>
+            </div>
+            <div style="height: 6px; background: #111; border-radius: 3px;">
+                <div style="width: $<Favorability>%; height: 100%; background: #f06292; box-shadow: 0 0 8px rgba(240,98,146,0.6);"></div>
+            </div>
+        </div>
+
+        <!-- Libido Bar -->
+        <div style="margin-bottom: 15px;">
+            <div style="display: flex; justify-content: space-between; font-size: 0.7em; margin-bottom: 4px; color: #ba68c8;">
+                <span>💜 性欲值</span>
+                <span>$<Libido>%</span>
+            </div>
+            <div style="height: 6px; background: #111; border-radius: 3px;">
+                <div style="width: $<Libido>%; height: 100%; background: #ba68c8; box-shadow: 0 0 8px rgba(186,104,200,0.6);"></div>
+            </div>
+        </div>
+
+        <!-- Internal Thoughts -->
+        <div style="background: rgba(0,0,0,0.3); padding: 10px; border-radius: 6px; font-size: 0.85em; border-left: 2px solid #4db6ac; margin-bottom: 10px;">
+            <div style="color: #4db6ac; font-size: 0.7em; font-weight: bold; margin-bottom: 3px;">🤔 内心的声音</div>
+            <div style="font-style: italic; color: #ccc;">"$<InnerVoice>"</div>
+        </div>
+
+        <!-- Clothing & Behavior -->
+        <div style="font-size: 0.75em; color: #777; line-height: 1.4; margin-bottom: 8px; border-bottom: 1px solid #333; padding-bottom: 8px;">
+                        <strong style="color: #81d4fa;">👚 服装:</strong> $<Clothing><br/>
+            <strong style="color: #a5d6a7;">💑 行为和姿势:</strong> $<Behavior>
+        </div>
+
+        <!-- Status & Reaction -->
+        <div style="font-size: 0.75em; color: #777; line-height: 1.4;">
+                        <strong style="color: #ffb74d;">🙀 Tips:</strong> $<Tips><br/>
+            <strong style="color: #aaa;">🐈 性器官反应:</strong> $<Reaction>
+        </div>
+    </div>
+</body>
+</html>

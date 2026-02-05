@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  st-status-bar-editor:
+    container_name: st-status-bar-editor
+    build:
+      context: .
+      # args:
+      #   - API_KEY=${API_KEY}
+    ports:
+      - "3099:80"
+    restart: always
+    environment:
+      - NODE_ENV=production
+      - TZ=Asia/Shanghai

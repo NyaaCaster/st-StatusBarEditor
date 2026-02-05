@@ -1,0 +1,5 @@
+{
+  "name": "SillyTavern状态栏编辑器",
+  "description": "A powerful editor for SillyTavern character status bars (HTML/CSS) with real-time preview and Gemini-powered design generation.",
+  "requestFramePermissions": []
+}
